@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - rOne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="headerContainer">
+        <a href="/news.html" class="left__header">
+          <img src="/assets/rone_logo.png" alt="" />
+        </a>
+        <div class="right__header">
+          <nav class="navbarContainer">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <div class="dropdown" onmouseleave="mouseleave()">
+                <li
+                onclick="myFunction()"
+                  onmouseover="myFunction()"
+                  class="dropbtn"
+                >
+                  Features
+                </li>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="/form.html">Forum</a>
+                  <a href="/jobs.html">Jobs</a>
+                  <a href="/news.html">News</a>
+                </div>
+              </div>
+              <div class="dropdown" onmouseleave="mouseleave()">
+                <li
+                  onclick="products()"
+                  onmouseover="products()"
+                  class="dropbtn"
+                >
+                  Products
+                </li>
+                <div id="myDropdown2" class="dropdown-content">
+                  <a href="#home">rONEdcard</a>
+                  <a href="#about">Cloud storage</a>
+                  <a href="#contact">Wallet</a>
+                </div>
+              </div>
+              <div class="dropdown" onmouseleave="mouseleave()">
+                <li onclick="about()" onmouseover="about()" class="dropbtn">
+                  About
+                </li>
+                <div id="myDropdown3" class="dropdown-content">
+                  <a href="https://ronedcard.com/link/about">About Us</a>
+                  <a href="/index.html">Contact Us</a>
+                </div>
+              </div>
+              <div class="dropdown" onmouseleave="mouseleave()">
+                <li
+                  onclick="comingSoon()"
+                  onmouseover="comingSoon()"
+                  class="dropbtn"
+                >
+                  Coming Soon
+                </li>
+                <div id="myDropdown4" class="dropdown-content">
+                  <a href="#">rONE digital Library</a>
+                  <a href="#">rONE E Come touch point</a>
+                  <a href="#">rONE Entertainment</a>
+                  <a href="#">rONE digital marketing</a>
+                  <a href="#">rONE digital university</a>
+                  <a href="#">rONE Organic living for all</a>
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="comingSoonContainer">
+        <img
+          src="https://t3.ftcdn.net/jpg/02/43/45/68/360_F_243456888_hzxWIjDMjBRQCVC8hDXZBn3UvIsRqD5O.jpg"
+          alt=""
+        />
+      </section>
+    </section>
+
+    <script>
+      /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").style.display = "block";
+        document.getElementById("myDropdown2").style.display = "none";
+        document.getElementById("myDropdown3").style.display = "none";
+        document.getElementById("myDropdown4").style.display = "none";
+      }
+
+      function products() {
+        document.getElementById("myDropdown").style.display = "none";
+        document.getElementById("myDropdown2").style.display = "block";
+        document.getElementById("myDropdown3").style.display = "none";
+        document.getElementById("myDropdown4").style.display = "none";
+      }
+
+      function about() {
+        document.getElementById("myDropdown3").style.display = "block";
+        document.getElementById("myDropdown").style.display = "none";
+        document.getElementById("myDropdown2").style.display = "none";
+        document.getElementById("myDropdown4").style.display = "none";
+      }
+
+      function comingSoon() {
+        document.getElementById("myDropdown4").style.display = "block";
+        document.getElementById("myDropdown").style.display = "none";
+        document.getElementById("myDropdown2").style.display = "none";
+        document.getElementById("myDropdown3").style.display = "none";
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
