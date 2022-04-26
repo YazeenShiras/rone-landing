@@ -284,6 +284,7 @@ body::-webkit-scrollbar {
 .right_about > p {
   font-size: 14px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .contactUsContainer {
@@ -608,6 +609,7 @@ body::-webkit-scrollbar {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    height: calc(80vh - 80px);
   }
   .left__home {
     height: 100%;
