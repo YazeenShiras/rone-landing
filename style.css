@@ -459,6 +459,7 @@ body::-webkit-scrollbar {
 .creditsContainer > p {
   margin-left: 8vw;
   font-size: 13px;
+  text-align: center;
 }
 
 .creditsContainer > a {
@@ -632,4 +633,7 @@ body::-webkit-scrollbar {
   .card__feature > p {
     padding: 0px 10px;
   }
+}
+
+@media only screen and (max-width: 360px) {
 }
