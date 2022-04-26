@@ -480,9 +480,16 @@ body::-webkit-scrollbar {
   .right__header {
     display: none;
   }
+  .left__header {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
   .buyNow__button,
   .learnMore__button {
     width: 40vw;
+  }
+  .buyNow__button {
+    margin-right: 10px;
   }
   .searchbar {
     width: 85vw;
