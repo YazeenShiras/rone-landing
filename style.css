@@ -512,9 +512,10 @@ body::-webkit-scrollbar {
   .cardsConatiner {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .twocards {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 8vw;
     margin-right: 8vw;
   }
