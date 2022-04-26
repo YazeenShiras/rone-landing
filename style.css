@@ -485,8 +485,18 @@ body::-webkit-scrollbar {
   margin: 0px 10px;
 }
 
+.menuContainer {
+  display: none;
+}
+
 @media only screen and (max-width: 500px) {
-  .right__header {
+  .menuContainer {
+    display: block;
+  }
+  .menuContainer > img {
+    cursor: pointer;
+  }
+  .navbarContainer {
     display: none;
   }
   .left__header {
@@ -505,6 +515,7 @@ body::-webkit-scrollbar {
   }
   .left__home {
     margin-left: 8vw;
+    margin-top: 100px;
   }
   .right__home {
     display: none;
@@ -629,7 +640,6 @@ body::-webkit-scrollbar {
     height: 100%;
     margin-left: 8vw;
     margin-right: 8vw;
-    margin-top: 70px;
   }
   .card__feature {
     width: 40vw;
@@ -660,5 +670,8 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     height: calc(100vh - 90px);
+  }
+  .left__home {
+    margin-top: 70px;
   }
 }
