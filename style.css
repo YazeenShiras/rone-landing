@@ -432,6 +432,17 @@ body::-webkit-scrollbar {
   border-radius: 7px;
 }
 
+.navMobile {
+  height: 100vh;
+  width: 80vw;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+  display: none;
+}
+
 .dropdown-content > a {
   color: black;
   padding: 12px 16px;
@@ -493,10 +504,80 @@ body::-webkit-scrollbar {
   .menuContainer {
     display: block;
   }
-  .menuContainer > img {
+  .menuButton > img {
     cursor: pointer;
+    height: 15px;
+    object-fit: contain;
   }
   .navbarContainer {
+    display: none;
+  }
+  .navMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerNavmobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .headerNavmobile > p {
+    margin-left: 8vw;
+  }
+  .headerNavmobile > img {
+    margin-right: 8vw;
+    cursor: pointer;
+    height: 20px;
+    object-fit: contain;
+  }
+  .navlinksmobilenav {
+    margin-top: 50px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+  .mainLinkmobNav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .featuresContainerMobNav {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    margin-left: 30px;
+    display: none;
+  }
+  .linkMobileNav {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .mainLinkmobNav > img {
+    height: 20px;
+    object-fit: contain;
+  }
+  .mainLinkmobNav > p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .mainLinkmobNav > p > img {
+    margin-left: 5px;
+  }
+  .featuresContainerMobNav > a {
+    color: #686868;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .sortUp {
     display: none;
   }
   .left__header {
