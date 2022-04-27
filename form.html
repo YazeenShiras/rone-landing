@@ -73,6 +73,11 @@
               </div>
             </ul>
           </nav>
+          <div class="menuContainer">
+            <div onclick="menuOpen()" class="menuButton">
+              <img src="/assets/menu_icon.svg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="comingSoonContainer">
@@ -82,51 +87,102 @@
         />
       </section>
     </section>
+    <section id="navMobile" class="navMobile">
+      <div class="headerNavmobile">
+        <p>Menu</p>
+        <img onclick="menuClose()" src="/assets/close_icon.svg" alt="" />
+      </div>
+      <div class="navlinksmobilenav">
+        <a href="/index.html" class="linkMobileNav">
+          <div class="mainLinkmobNav">
+            <img src="/assets/home_icon.png" alt="" />
+            <p>Home</p>
+          </div>
+        </a>
+        <div href="/index.html" class="linkMobileNav">
+          <div onclick="featuresMobNav()" class="mainLinkmobNav">
+            <img src="/assets/features_icon.png" alt="" />
+            <p>
+              Features
+              <img id="sortDownFeatures" src="/assets/sortDown_icon.png" />
+              <img
+                id="sortUpFeatures"
+                class="sortUp"
+                src="/assets/sortUp_icon.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="featuresContainerMobNav" id="featureDropdownMobNav">
+            <a href="/form.html">Forum</a>
+            <a href="/jobs.html">Jobs</a>
+            <a href="/news.html">News</a>
+          </div>
+        </div>
+        <div href="/index.html" class="linkMobileNav">
+          <div onclick="productsMobNav()" class="mainLinkmobNav">
+            <img src="/assets/products_icon.png" alt="" />
+            <p>
+              Products
+              <img id="sortDownProducts" src="/assets/sortDown_icon.png" />
+              <img
+                id="sortUpProducts"
+                class="sortUp"
+                src="/assets/sortUp_icon.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="featuresContainerMobNav" id="productsDropdownMobNav">
+            <a href="https://ronedcard.com">rONEdcard</a>
+            <a href="https://ronedcard.com">Cloud storage</a>
+            <a href="https://ronedcard.com">Wallet</a>
+          </div>
+        </div>
+        <div href="/index.html" class="linkMobileNav">
+          <div onclick="aboutMobNav()" class="mainLinkmobNav">
+            <img src="/assets/about_icon.svg" alt="" />
+            <p>
+              About <img id="sortDownAbout" src="/assets/sortDown_icon.png" />
+              <img
+                id="sortUpAbout"
+                class="sortUp"
+                src="/assets/sortUp_icon.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="featuresContainerMobNav" id="aboutDropdownMobNav">
+            <a href="https://ronedcard.com/link/about">About Us</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div href="/index.html" class="linkMobileNav">
+          <div onclick="comingSoonMobNav()" class="mainLinkmobNav">
+            <img src="/assets/comingSoon_icon.png" alt="" />
+            <p>
+              Coming Soon
+              <img id="sortDownComingSoon" src="/assets/sortDown_icon.png" />
+              <img
+                class="sortUp"
+                id="sortUpComingSoon"
+                src="/assets/sortUp_icon.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="featuresContainerMobNav" id="comingSoonDropdownMobNav">
+            <a href="#">rONE digital Library</a>
+            <a href="#">rONE E Come touch point</a>
+            <a href="#">rONE Entertainment</a>
+            <a href="#">rONE digital marketing</a>
+            <a href="#">rONE digital university</a>
+            <a href="#">rONE Organic living for all</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-      /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").style.display = "flex";
-        document.getElementById("myDropdown2").style.display = "none";
-        document.getElementById("myDropdown3").style.display = "none";
-        document.getElementById("myDropdown4").style.display = "none";
-      }
-
-      function products() {
-        document.getElementById("myDropdown").style.display = "none";
-        document.getElementById("myDropdown2").style.display = "flex";
-        document.getElementById("myDropdown3").style.display = "none";
-        document.getElementById("myDropdown4").style.display = "none";
-      }
-
-      function about() {
-        document.getElementById("myDropdown3").style.display = "flex";
-        document.getElementById("myDropdown").style.display = "none";
-        document.getElementById("myDropdown2").style.display = "none";
-        document.getElementById("myDropdown4").style.display = "none";
-      }
-
-      function comingSoon() {
-        document.getElementById("myDropdown4").style.display = "flex";
-        document.getElementById("myDropdown").style.display = "none";
-        document.getElementById("myDropdown2").style.display = "none";
-        document.getElementById("myDropdown3").style.display = "none";
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
+    <script src="/script.js"></script>
   </body>
 </html>
