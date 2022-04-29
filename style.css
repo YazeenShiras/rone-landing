@@ -289,7 +289,7 @@ body::-webkit-scrollbar {
 
 .contactUsContainer {
   background-image: url("/assets/contact_bg.png");
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -297,6 +297,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .left_contact {
