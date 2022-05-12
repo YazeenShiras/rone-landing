@@ -520,6 +520,7 @@ body::-webkit-scrollbar {
   .navMobile {
     display: flex;
     flex-direction: column;
+    display: none;
   }
   .headerNavmobile {
     display: flex;
